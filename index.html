@@ -33,22 +33,17 @@
     <style>
         body { background-color: #050505; color: #e5e5e5; }
         #particles-js { position: fixed; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
-        
         .glass-panel {
             backdrop-filter: blur(20px) saturate(160%);
             -webkit-backdrop-filter: blur(20px) saturate(160%);
             background: rgba(20, 20, 20, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         .hero-gradient {
             background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
         }
-
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        
-        /* Smooth scale hover for cards */
         .hover-lift { transition: transform 0.3s ease, border-color 0.3s ease; }
         .hover-lift:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.4); }
     </style>
@@ -58,7 +53,7 @@
 
     <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl">
         <div class="glass-panel rounded-full px-6 py-3 flex justify-between items-center">
-            <span class="text-gold font-bold tracking-tighter">DS.</span>
+            <span class="text-gold font-bold tracking-tighter text-lg">DS.</span>
             <div class="flex gap-6 text-[11px] uppercase tracking-widest font-semibold text-white/70">
                 <a href="#about" class="hover:text-gold transition">About</a>
                 <a href="#projects" class="hover:text-gold transition">Projects</a>
@@ -69,67 +64,94 @@
     </nav>
 
     <section class="h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient">
-        <span class="text-gold text-xs uppercase tracking-[0.5em] mb-4 reveal">Business Intelligence & Data Strategy</span>
+        <div class="mb-8 reveal">
+            <img src="me.jpg" alt="Dhikra Semmar" class="w-28 h-28 rounded-2xl border border-gold/30 object-cover grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl shadow-gold/10">
+        </div>
+        
+        <span class="text-gold text-xs uppercase tracking-[0.5em] mb-4 reveal">Data Intelligence & Business Strategy</span>
         <h1 class="text-5xl md:text-8xl font-serif mb-6 reveal">Dhikra <span class="italic">Semmar</span></h1>
-        <p class="max-w-xl text-white/50 leading-relaxed reveal">
-            Turning complex data ecosystems into premium business performance. Currently specializing in Behavioral Economics and Automation.
+        <p class="max-w-xl text-white/50 leading-relaxed reveal text-sm md:text-base">
+            MSc Business Intelligence student specializing in Behavioral Economics and Automation. 
+            Bridging the gap between raw data and premium business performance.
         </p>
         <div class="mt-10 flex gap-4 reveal">
-            <a href="#projects" class="bg-gold text-dark px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition">Explore Case Studies</a>
+            <a href="#projects" class="bg-gold text-dark px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition shadow-lg shadow-gold/20">View My Bots</a>
         </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
         <div class="glass-panel p-6 rounded-2xl text-center reveal">
-            <div class="text-gold text-2xl font-bold">5+</div>
-            <div class="text-[10px] uppercase text-white/40">Python Bots Built</div>
+            <div class="text-gold text-2xl font-bold">HSK 3</div>
+            <div class="text-[10px] uppercase text-white/40">Mandarin Chinese</div>
         </div>
         <div class="glass-panel p-6 rounded-2xl text-center reveal">
-            <div class="text-gold text-2xl font-bold">30%</div>
-            <div class="text-[10px] uppercase text-white/40">Cost Reduction</div>
+            <div class="text-gold text-2xl font-bold">Azure</div>
+            <div class="text-[10px] uppercase text-white/40">Cloud Architecture</div>
         </div>
         <div class="glass-panel p-6 rounded-2xl text-center reveal">
-            <div class="text-gold text-2xl font-bold">10k+</div>
-            <div class="text-[10px] uppercase text-white/40">Data Points Managed</div>
+            <div class="text-gold text-2xl font-bold">NLP</div>
+            <div class="text-[10px] uppercase text-white/40">Machine Learning</div>
         </div>
         <div class="glass-panel p-6 rounded-2xl text-center reveal">
-            <div class="text-gold text-2xl font-bold">BDEEM</div>
-            <div class="text-[10px] uppercase text-white/40">Master's Specialization</div>
+            <div class="text-gold text-2xl font-bold">Master 2</div>
+            <div class="text-[10px] uppercase text-white/40">BI & Economics</div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-serif mb-6 italic reveal">The Strategy</h2>
+                <p class="text-white/50 text-sm leading-relaxed mb-4 reveal">
+                    I operate at the intersection of **Behavioral Economics** and **Data Intelligence**. My work focuses on understanding the "why" behind consumer decisions and building the "how" through automated systems.
+                </p>
+                <p class="text-white/50 text-sm leading-relaxed reveal">
+                    Whether it's deploying NLP bots on **Hugging Face** or architecting cloud workflows in **Azure**, I transform raw data into a competitive advantage for premium global brands.
+                </p>
+            </div>
+            <div class="glass-panel p-8 rounded-[2rem] reveal">
+                <h3 class="text-gold font-bold mb-4 text-xs uppercase tracking-widest">Core Philosophy</h3>
+                <ul class="space-y-4 text-xs text-white/70">
+                    <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-gold"></i> Data is only as good as the decisions it drives.</li>
+                    <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-gold"></i> Automation should liberate human creativity.</li>
+                    <li class="flex items-center gap-3"><i data-feather="check-circle" class="w-4 h-4 text-gold"></i> International markets require localized intelligence.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-serif mb-12 italic reveal">Selected Works</h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <h2 class="text-3xl font-serif mb-12 italic reveal">Live Technical Demos</h2>
+        <div class="grid md:grid-cols-3 gap-8">
             
             <div class="glass-panel p-8 rounded-[2rem] hover-lift reveal">
                 <div class="flex justify-between items-start mb-6">
-                    <div class="p-3 bg-gold/10 rounded-xl"><i data-feather="database" class="text-gold"></i></div>
-                    <span class="text-[10px] font-mono text-white/30">PYTHON / SCRAPING</span>
+                    <div class="p-3 bg-yellow-500/10 rounded-xl"><i data-feather="monitor" class="text-yellow-500"></i></div>
+                    <span class="text-[10px] font-mono text-white/30">HUGGING FACE</span>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Market Intelligence Scraper</h3>
-                <p class="text-sm text-white/50 leading-relaxed mb-6">
-                    Automated competitive monitoring system collecting 1,000+ data points weekly to track market trends and regulatory shifts.
-                </p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">BeautifulSoup</span>
-                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">Pandas</span>
-                </div>
+                <h3 class="text-xl font-bold mb-3">SA Monitoring Bot</h3>
+                <p class="text-sm text-white/50 leading-relaxed mb-6">Real-time monitoring solution designed to track market fluctuations and regulatory changes.</p>
+                <a href="https://huggingface.co/spaces/WEEKNDGRL/SA_Monitoring_Bot" target="_blank" class="text-[10px] font-bold text-gold uppercase tracking-widest hover:underline">Launch Bot →</a>
             </div>
 
             <div class="glass-panel p-8 rounded-[2rem] hover-lift reveal">
                 <div class="flex justify-between items-start mb-6">
-                    <div class="p-3 bg-blue-500/10 rounded-xl"><i data-feather="bar-chart-2" class="text-blue-400"></i></div>
-                    <span class="text-[10px] font-mono text-white/30">POWER BI / SQL</span>
+                    <div class="p-3 bg-blue-500/10 rounded-xl"><i data-feather="search" class="text-blue-400"></i></div>
+                    <span class="text-[10px] font-mono text-white/30">NLP / AI</span>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Sales Performance Hub</h3>
-                <p class="text-sm text-white/50 leading-relaxed mb-6">
-                    Structured 10,000+ rows of heterogeneous sales data into a strategic dashboard, reducing reporting time by 80%.
-                </p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">DAX</span>
-                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">Data Cleaning</span>
+                <h3 class="text-xl font-bold mb-3">Investigator Bot</h3>
+                <p class="text-sm text-white/50 leading-relaxed mb-6">Advanced retrieval system leveraging NLP to extract insights from unstructured datasets.</p>
+                <a href="https://huggingface.co/spaces/WEEKNDGRL/investigator-bot" target="_blank" class="text-[10px] font-bold text-gold uppercase tracking-widest hover:underline">Run Analysis →</a>
+            </div>
+
+            <div class="glass-panel p-8 rounded-[2rem] hover-lift reveal">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-blue-600/10 rounded-xl"><i data-feather="cloud" class="text-blue-500"></i></div>
+                    <span class="text-[10px] font-mono text-white/30">AZURE / JSON</span>
                 </div>
+                <h3 class="text-xl font-bold mb-3">Azure Automation</h3>
+                <p class="text-sm text-white/50 leading-relaxed mb-6">Cloud-native newsletter workflow architected via JSON templates in the Azure Portal.</p>
+                <a href="azure.jpg" target="_blank" class="text-[10px] font-bold text-gold uppercase tracking-widest hover:underline">View Architecture →</a>
             </div>
 
         </div>
@@ -138,68 +160,53 @@
     <section id="experience" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
         <h2 class="text-3xl font-serif mb-12 italic reveal">Professional Experience</h2>
         <div class="space-y-12">
-            
             <div class="flex flex-col md:flex-row gap-4 md:gap-20 reveal">
-                <div class="md:w-1/4 text-white/30 font-mono text-sm">2024 — PRESENT</div>
+                <div class="md:w-1/4 text-white/30 font-mono text-sm uppercase">2024 — Present</div>
                 <div class="md:w-3/4">
                     <h4 class="text-lg font-bold">Apprentice Business Analyst & Automation Developer</h4>
-                    <p class="text-gold text-sm mb-4">Garance Formation</p>
-                    <p class="text-white/50 text-sm leading-relaxed">
-                        Leading automation initiatives by bridging the gap between operational needs and technical solutions. Reduced manual workloads by 30% through Python-driven task automation.
-                    </p>
+                    <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-4">Garance Formation</p>
+                    <p class="text-white/50 text-sm leading-relaxed">Reducing manual workloads by 30% through Python-driven task automation and Power BI strategic reporting.</p>
                 </div>
             </div>
-
             <div class="flex flex-col md:flex-row gap-4 md:gap-20 reveal">
-                <div class="md:w-1/4 text-white/30 font-mono text-sm">2022 — 2023</div>
+                <div class="md:w-1/4 text-white/30 font-mono text-sm uppercase">Education</div>
                 <div class="md:w-3/4">
-                    <h4 class="text-lg font-bold">Marketing Manager & Mandarin Instructor</h4>
-                    <p class="text-gold text-sm mb-4">Torii Institute</p>
-                    <p class="text-white/50 text-sm leading-relaxed">
-                        Developed strategic business plans to increase student enrollment and managed multilingual pedagogical programs.
-                    </p>
+                    <h4 class="text-lg font-bold">MSc. Business Intelligence (BDEEM)</h4>
+                    <p class="text-gold text-xs font-semibold uppercase tracking-widest mb-4">Master's Degree</p>
+                    <p class="text-white/50 text-sm leading-relaxed">Specializing in Behavioral and Digital Economics for European Markets.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <footer class="py-20 text-center border-t border-white/5">
         <div class="reveal">
             <h2 class="text-4xl font-serif mb-6 italic">Let's Connect</h2>
-            <p class="text-white/40 mb-10">Open for Business Intelligence & Data Analyst opportunities.</p>
+            <p class="text-white/40 mb-10 text-sm">Strategically available for Data Analyst & Business Intelligence roles.</p>
             <div class="flex justify-center gap-6">
-                <a href="https://linkedin.com/in/semmar-dhikra" class="p-4 glass-panel rounded-full hover:text-gold transition"><i data-feather="linkedin"></i></a>
-                <a href="mailto:semmar.dhikra@gmail.com" class="p-4 glass-panel rounded-full hover:text-gold transition"><i data-feather="mail"></i></a>
+                <a href="https://linkedin.com/in/semmar-dhikra" class="p-4 glass-panel rounded-full hover:text-gold transition shadow-xl"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+                <a href="mailto:semmar.dhikra@gmail.com" class="p-4 glass-panel rounded-full hover:text-gold transition shadow-xl"><i data-feather="mail" class="w-5 h-5"></i></a>
+                <a href="https://huggingface.co/WEEKNDGRL" class="p-4 glass-panel rounded-full hover:text-gold transition shadow-xl"><i data-feather="box" class="w-5 h-5"></i></a>
             </div>
-            <p class="mt-20 text-[10px] uppercase tracking-widest text-white/20">© 2026 Dhikra Semmar — Built with Passion & Data</p>
+            <p class="mt-20 text-[10px] uppercase tracking-[0.3em] text-white/20">© 2026 Dhikra Semmar — Premium Data Intelligence</p>
         </div>
     </footer>
 
     <script>
-        // Icons
         feather.replace();
-
-        // Particles
         particlesJS("particles-js", {
             "particles": {
-                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                "number": { "value": 30, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#d4af37" },
-                "opacity": { "value": 0.15 },
+                "opacity": { "value": 0.1 },
                 "size": { "value": 2 },
-                "line_linked": { "enable": true, "distance": 150, "color": "#d4af37", "opacity": 0.05, "width": 1 },
-                "move": { "enable": true, "speed": 1 }
+                "line_linked": { "enable": true, "distance": 150, "color": "#d4af37", "opacity": 0.03, "width": 1 },
+                "move": { "enable": true, "speed": 0.8 }
             }
         });
-
-        // Scroll Reveal
-        const observerOptions = { threshold: 0.1 };
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, observerOptions);
-
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
