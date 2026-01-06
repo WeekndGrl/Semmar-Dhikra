@@ -63,21 +63,48 @@
         </div>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient">
-        <div class="mb-8 reveal">
-            <img src="me.jpg" alt="Dhikra Semmar" class="w-28 h-28 rounded-2xl border border-gold/30 object-cover grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl shadow-gold/10">
-        </div>
+    <section class="min-h-screen flex items-center px-6 md:px-20 hero-gradient relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full pt-20">
         
-        <span class="text-gold text-xs uppercase tracking-[0.5em] mb-4 reveal">Data Intelligence & Business Strategy</span>
-        <h1 class="text-5xl md:text-8xl font-serif mb-6 reveal">Dhikra <span class="italic">Semmar</span></h1>
-        <p class="max-w-xl text-white/50 leading-relaxed reveal text-sm md:text-base">
-            MSc Business Intelligence student specializing in Behavioral Economics and Automation. 
-            Bridging the gap between raw data and premium business performance.
-        </p>
-        <div class="mt-10 flex gap-4 reveal">
-            <a href="#projects" class="bg-gold text-dark px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition shadow-lg shadow-gold/20">View My Bots</a>
+        <div class="text-left order-2 md:order-1">
+            <span class="text-gold text-xs uppercase tracking-[0.5em] mb-4 block reveal">
+                Business Intelligence & Data Strategy
+            </span>
+            <h1 class="text-5xl md:text-8xl font-serif mb-6 reveal leading-tight">
+                Dhikra <br>
+                <span class="italic text-gold/90">Semmar</span>
+            </h1>
+            <p class="max-w-lg text-white/50 leading-relaxed reveal text-sm md:text-lg mb-10">
+                MSc Business Intelligence student specializing in Behavioral Economics and Automation. 
+                Bridging the gap between raw data and premium business performance at **DS Automobiles**.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 reveal">
+                <a href="#projects" class="bg-gold text-dark px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition shadow-lg shadow-gold/20">
+                    Explore My Bots
+                </a>
+                <a href="https://huggingface.co/WEEKNDGRL" target="_blank" class="glass-panel px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-dark transition">
+                    Hugging Face
+                </a>
+            </div>
         </div>
-    </section>
+
+        <div class="flex justify-center md:justify-end order-1 md:order-2 reveal">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gold/10 rounded-[3rem] blur-2xl group-hover:bg-gold/20 transition duration-700"></div>
+                
+                <img src="me.jpg" alt="Dhikra Semmar" 
+                     class="relative w-72 h-96 md:w-[400px] md:h-[550px] rounded-[2.5rem] border border-white/10 object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
+                
+                <div class="absolute -bottom-6 -left-6 glass-panel p-5 rounded-2xl shadow-xl border-gold/20 reveal">
+                    <p class="text-gold font-bold text-xl uppercase tracking-tighter">M2 Student</p>
+                    <p class="text-[10px] text-white/40 uppercase tracking-widest">BDEEM Specialization</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
         <div class="glass-panel p-6 rounded-2xl text-center reveal">
