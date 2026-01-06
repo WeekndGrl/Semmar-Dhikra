@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhikra Semmar | Data Intelligence Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:italic,wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        dark: '#050505',
+                        card: 'rgba(255, 255, 255, 0.03)',
+                        border: 'rgba(255, 255, 255, 0.08)'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #050505; color: #e5e5e5; }
+        #particles-js { position: fixed; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+        
+        .glass-panel {
+            backdrop-filter: blur(20px) saturate(160%);
+            -webkit-backdrop-filter: blur(20px) saturate(160%);
+            background: rgba(20, 20, 20, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Smooth scale hover for cards */
+        .hover-lift { transition: transform 0.3s ease, border-color 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); border-color: rgba(212, 175, 55, 0.4); }
+    </style>
+</head>
+<body class="font-sans selection:bg-gold/30 selection:text-gold">
+    <div id="particles-js"></div>
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl">
+        <div class="glass-panel rounded-full px-6 py-3 flex justify-between items-center">
+            <span class="text-gold font-bold tracking-tighter">DS.</span>
+            <div class="flex gap-6 text-[11px] uppercase tracking-widest font-semibold text-white/70">
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#projects" class="hover:text-gold transition">Projects</a>
+                <a href="#experience" class="hover:text-gold transition">Resume</a>
+            </div>
+            <a href="mailto:semmar.dhikra@gmail.com" class="text-white hover:text-gold transition"><i data-feather="mail" class="w-4 h-4"></i></a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient">
+        <span class="text-gold text-xs uppercase tracking-[0.5em] mb-4 reveal">Business Intelligence & Data Strategy</span>
+        <h1 class="text-5xl md:text-8xl font-serif mb-6 reveal">Dhikra <span class="italic">Semmar</span></h1>
+        <p class="max-w-xl text-white/50 leading-relaxed reveal">
+            Turning complex data ecosystems into premium business performance. Currently specializing in Behavioral Economics and Automation.
+        </p>
+        <div class="mt-10 flex gap-4 reveal">
+            <a href="#projects" class="bg-gold text-dark px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition">Explore Case Studies</a>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-32">
+        <div class="glass-panel p-6 rounded-2xl text-center reveal">
+            <div class="text-gold text-2xl font-bold">5+</div>
+            <div class="text-[10px] uppercase text-white/40">Python Bots Built</div>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl text-center reveal">
+            <div class="text-gold text-2xl font-bold">30%</div>
+            <div class="text-[10px] uppercase text-white/40">Cost Reduction</div>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl text-center reveal">
+            <div class="text-gold text-2xl font-bold">10k+</div>
+            <div class="text-[10px] uppercase text-white/40">Data Points Managed</div>
+        </div>
+        <div class="glass-panel p-6 rounded-2xl text-center reveal">
+            <div class="text-gold text-2xl font-bold">BDEEM</div>
+            <div class="text-[10px] uppercase text-white/40">Master's Specialization</div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-serif mb-12 italic reveal">Selected Works</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="glass-panel p-8 rounded-[2rem] hover-lift reveal">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-gold/10 rounded-xl"><i data-feather="database" class="text-gold"></i></div>
+                    <span class="text-[10px] font-mono text-white/30">PYTHON / SCRAPING</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Market Intelligence Scraper</h3>
+                <p class="text-sm text-white/50 leading-relaxed mb-6">
+                    Automated competitive monitoring system collecting 1,000+ data points weekly to track market trends and regulatory shifts.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">BeautifulSoup</span>
+                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">Pandas</span>
+                </div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-[2rem] hover-lift reveal">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-blue-500/10 rounded-xl"><i data-feather="bar-chart-2" class="text-blue-400"></i></div>
+                    <span class="text-[10px] font-mono text-white/30">POWER BI / SQL</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Sales Performance Hub</h3>
+                <p class="text-sm text-white/50 leading-relaxed mb-6">
+                    Structured 10,000+ rows of heterogeneous sales data into a strategic dashboard, reducing reporting time by 80%.
+                </p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">DAX</span>
+                    <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full">Data Cleaning</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-20 border-t border-white/5">
+        <h2 class="text-3xl font-serif mb-12 italic reveal">Professional Experience</h2>
+        <div class="space-y-12">
+            
+            <div class="flex flex-col md:flex-row gap-4 md:gap-20 reveal">
+                <div class="md:w-1/4 text-white/30 font-mono text-sm">2024 — PRESENT</div>
+                <div class="md:w-3/4">
+                    <h4 class="text-lg font-bold">Apprentice Business Analyst & Automation Developer</h4>
+                    <p class="text-gold text-sm mb-4">Garance Formation</p>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Leading automation initiatives by bridging the gap between operational needs and technical solutions. Reduced manual workloads by 30% through Python-driven task automation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 md:gap-20 reveal">
+                <div class="md:w-1/4 text-white/30 font-mono text-sm">2022 — 2023</div>
+                <div class="md:w-3/4">
+                    <h4 class="text-lg font-bold">Marketing Manager & Mandarin Instructor</h4>
+                    <p class="text-gold text-sm mb-4">Torii Institute</p>
+                    <p class="text-white/50 text-sm leading-relaxed">
+                        Developed strategic business plans to increase student enrollment and managed multilingual pedagogical programs.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <div class="reveal">
+            <h2 class="text-4xl font-serif mb-6 italic">Let's Connect</h2>
+            <p class="text-white/40 mb-10">Open for Business Intelligence & Data Analyst opportunities.</p>
+            <div class="flex justify-center gap-6">
+                <a href="https://linkedin.com/in/semmar-dhikra" class="p-4 glass-panel rounded-full hover:text-gold transition"><i data-feather="linkedin"></i></a>
+                <a href="mailto:semmar.dhikra@gmail.com" class="p-4 glass-panel rounded-full hover:text-gold transition"><i data-feather="mail"></i></a>
+            </div>
+            <p class="mt-20 text-[10px] uppercase tracking-widest text-white/20">© 2026 Dhikra Semmar — Built with Passion & Data</p>
+        </div>
+    </footer>
+
+    <script>
+        // Icons
+        feather.replace();
+
+        // Particles
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#d4af37" },
+                "opacity": { "value": 0.15 },
+                "size": { "value": 2 },
+                "line_linked": { "enable": true, "distance": 150, "color": "#d4af37", "opacity": 0.05, "width": 1 },
+                "move": { "enable": true, "speed": 1 }
+            }
+        });
+
+        // Scroll Reveal
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
