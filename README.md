@@ -6,7 +6,7 @@ This repository hosts my professional portfolio, designed to showcase the inters
 ## 📈 Featured Project: The Limits of Wealth
 **An Econometric Study on GDP and Subjective Well-Being**
 
-[cite_start]This project explores the relationship between socioeconomic factors and national happiness levels, specifically testing the "Easterlin Paradox" and identifying the financial saturation points of human well-being[cite: 3].
+<cite>This project explores the relationship between socioeconomic factors and national happiness levels, specifically testing the "Easterlin Paradox" and identifying the financial saturation points of human well-being</cite>.
 
 ### 🛠️ Data & Methodology
 - **Dataset:** [World Happiness Report (Kaggle)](https://www.kaggle.com/datasets/mathurinache/world-happiness-report/data)
